@@ -1,0 +1,545 @@
+{
+  "PROCESS": [{
+      "QueueName": "INM1",
+      "Applications": [{
+          "name": "ASBA",
+          "url": "https://www.google.com"
+        },
+        {
+          "name": "BRC",
+          "url": ""
+        },
+        {
+          "name": "Datawarehouse",
+          "url": ""
+        },
+        {
+          "name": "DC Charges Calaulator/HTV Charges",
+          "url": ""
+        },
+        {
+          "name": "WDM(GWIS)",
+          "url": ""
+        },
+        {
+          "name": "Ecare",
+          "url": ""
+        },
+        {
+          "name": "ECS Mandate",
+          "url": ""
+        },
+        {
+          "name": "E-quality",
+          "url": ""
+        },
+        {
+          "name": "FACT",
+          "url": ""
+        },
+        {
+          "name": "GDI",
+          "url": ""
+        },
+        {
+          "name": "Global Links",
+          "url": ""
+        },
+        {
+          "name": "Intellect NNC",
+          "url": ""
+        },
+        {
+          "name": "IBPS (Import Bulk Payment System)",
+          "url": ""
+        },
+        {
+          "name": "IMPS",
+          "url": ""
+        },
+        {
+          "name": "NRI PIS",
+          "url": ""
+        },
+        {
+          "name": "SWIMS",
+          "url": ""
+        },
+        {
+          "name": "Esmart",
+          "url": ""
+        },
+        {
+          "name": "Webcare (APAC)",
+          "url": ""
+        },
+        {
+          "name": "INR Processing",
+          "url": ""
+        },
+        {
+          "name": "ECS DEBIT REJECTS",
+          "url": ""
+        },
+        {
+          "name": "FOREIGN CURRENCY (FCY)",
+          "url": ""
+        },
+        {
+          "name": "LRMS",
+          "url": ""
+        },
+        {
+          "name": "DCM",
+          "url": ""
+        },
+        {
+          "name": "FIRC CONVERTOR -  FIRCCONV",
+          "url": ""
+        }
+      ]
+    },
+
+    {
+      "QueueName": "INM2",
+      "Applications": [{
+          "name": "ehelpline",
+          "url": ""
+        },
+        {
+          "name": "LTMSI",
+          "url": ""
+        },
+        {
+          "name": "DMP",
+          "url": ""
+        },
+        {
+          "name": "Omniflow",
+          "url": ""
+        },
+        {
+          "name": "PDC",
+          "url": ""
+        },
+        {
+          "name": "PDD",
+          "url": ""
+        },
+        {
+          "name": "HUBonqms",
+          "url": ""
+        },
+        {
+          "name": "VBP",
+          "url": ""
+        },
+        {
+          "name": "RMS",
+          "url": ""
+        },
+        {
+          "name": "PDD",
+          "url": ""
+        },
+        {
+          "name": "Efos",
+          "url": ""
+        },
+        {
+          "name": "WMS",
+          "url": ""
+        },
+        {
+          "name": "EKUBER",
+          "url": ""
+        },
+        {
+          "name": "DNC",
+          "url": ""
+        },
+        {
+          "name": "CTS 2.5",
+          "url": ""
+        },
+        {
+          "name": "CTS 1.0",
+          "url": ""
+        },
+        {
+          "name": "WMS",
+          "url": ""
+        },
+        {
+          "name": "AMLOC",
+          "url": ""
+        },
+        {
+          "name": "Sfms NEFT",
+          "url": ""
+        },
+        {
+          "name": "SFMS MI",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "GR",
+      "Applications": [{
+          "name": "BMM",
+          "url": ""
+        },
+        {
+          "name": "GWIS GR",
+          "url": ""
+        },
+        {
+          "name": "Ecare HBMY",
+          "url": ""
+        },
+        {
+          "name": "Ecare",
+          "url": ""
+        },
+        {
+          "name": "Ultra POS",
+          "url": ""
+        },
+        {
+          "name": "Midas(Web)",
+          "url": ""
+        },
+        {
+          "name": "Euclid",
+          "url": ""
+        },
+        {
+          "name": "On-Demand",
+          "url": ""
+        },
+        {
+          "name": "CAMP",
+          "url": ""
+        },
+        {
+          "name": "KANA",
+          "url": ""
+        },
+        {
+          "name": "OBS(Citrix)",
+          "url": ""
+        },
+        {
+          "name": "SAM",
+          "url": ""
+        },
+        {
+          "name": "Hsbcnet US",
+          "url": ""
+        },
+        {
+          "name": "Hsbcnet EU",
+          "url": ""
+        },
+        {
+          "name": "Common Gateway",
+          "url": ""
+        },
+        {
+          "name": "AMIS Midas",
+          "url": ""
+        },
+        {
+          "name": "Home Track",
+          "url": ""
+        },
+        {
+          "name": "GWIS/GBS/PAY",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "HBEU UK CARDS OFFSHORE",
+      "Applications": [{
+          "name": "CMDS",
+          "url": ""
+        },
+        {
+          "name": "Verified by VISA",
+          "url": ""
+        },
+        {
+          "name": "MI Vision 1",
+          "url": ""
+        },
+        {
+          "name": "MI Vision 2",
+          "url": ""
+        },
+        {
+          "name": "MasterCard",
+          "url": ""
+        },
+        {
+          "name": "HSBC Net",
+          "url": ""
+        },
+        {
+          "name": "HSBCNet Temporary Limit Amendment",
+          "url": ""
+        },
+        {
+          "name": "BMM",
+          "url": ""
+        },
+        {
+          "name": "SAD",
+          "url": ""
+        },
+        {
+          "name": "Visa Online",
+          "url": ""
+        },
+        {
+          "name": "Recurring Transactions Database",
+          "url": ""
+        },
+        {
+          "name": "Cold OnDemand (web)",
+          "url": ""
+        },
+        {
+          "name": "OHC-eChamps (web)",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "HBME UAE GWIS",
+      "Applications": [{
+          "name": "HBME GWIS-Archive Server",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-Cards",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-DICIS",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-DIFC",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-EDMS",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-KUWAIT",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-Regional Countries",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-SSO",
+          "url": ""
+        },
+        {
+          "name": "HBME GWIS-UAE",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "HBEU CHANNEL ISLANDS",
+      "Applications": [{
+          "name": "HUB",
+          "url": ""
+        },
+        {
+          "name": "SESSIONS",
+          "url": ""
+        },
+        {
+          "name": "GWIS",
+          "url": ""
+        },
+        {
+          "name": "BMM",
+          "url": ""
+        },
+        {
+          "name": "Advisor Office",
+          "url": ""
+        },
+        {
+          "name": "GDI",
+          "url": ""
+        },
+        {
+          "name": "GCD",
+          "url": ""
+        },
+        {
+          "name": "CAMP",
+          "url": ""
+        },
+        {
+          "name": "HFAJ DIP",
+          "url": ""
+        },
+        {
+          "name": "HIMI",
+          "url": ""
+        },
+        {
+          "name": "CWD",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "HNAH_USA_INT_APP_SECURITY_TEAM_1",
+      "Applications": [{
+          "name": "Archer",
+          "url": ""
+        },
+        {
+          "name": "Check Image Archive",
+          "url": ""
+        },
+        {
+          "name": "Compass-CashEdge",
+          "url": ""
+        },
+        {
+          "name": "Document Credit Reimbursement",
+          "url": ""
+        },
+        {
+          "name": "Envestnet Performance Reporting",
+          "url": ""
+        },
+        {
+          "name": "Envestnet MPS",
+          "url": ""
+        },
+        {
+          "name": "Credit Work Flow Tool(CWT)-Credit Services user",
+          "url": ""
+        },
+        {
+          "name": "Credit Work Flow Tool(CWT)",
+          "url": ""
+        },
+        {
+          "name": "GLobal customer Directory(GCD)",
+          "url": ""
+        },
+        {
+          "name": "Global Data Leak Prevention(DLP)",
+          "url": ""
+        },
+        {
+          "name": "GLobal Direct International(GDI)",
+          "url": ""
+        },
+        {
+          "name": "GLobal Links",
+          "url": ""
+        },
+        {
+          "name": "Pershing NetExchangePro(NetX)",
+          "url": ""
+        },
+        {
+          "name": "STUCKY",
+          "url": ""
+        },
+
+        {
+          "name": "GLobal customer Directory(GCD)",
+          "url": ""
+        },
+        {
+          "name": "HIMI",
+          "url": ""
+        },
+        {
+          "name": "WINCOR Pro CLassic Enterprise",
+          "url": ""
+        },
+        {
+          "name": "RMA",
+          "url": ""
+        },
+        {
+          "name": "CWD",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "AUSTRALIA",
+      "Applications": [{
+          "name": "IFAI",
+          "url": ""
+        },
+        {
+          "name": "E-care(Aus)",
+          "url": ""
+        },
+        {
+          "name": "SVM",
+          "url": ""
+        },
+        {
+          "name": "Business",
+          "url": ""
+        },
+        {
+          "name": "Global Link",
+          "url": ""
+        },
+        {
+          "name": "GCD/PCD",
+          "url": ""
+        },
+        {
+          "name": "GDI",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "QueueName": "HBEU_UK_SECURITY_OS",
+      "Applications": [{
+          "name": "E-Champs",
+          "url": ""
+        },
+        {
+          "name": "E-care(UK)",
+          "url": ""
+        },
+        {
+          "name": "On-Demand",
+          "url": ""
+        },
+        {
+          "name": "PEGA",
+          "url": ""
+        },
+        {
+          "name": "Co-Stars",
+          "url": ""
+        }
+      ]
+    }
+  ]
+}

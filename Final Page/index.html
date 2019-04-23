@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Favourites Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="fontawesome-free-5.5.0-web/css/fontawesome.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <section class="">
+            <div class="container">
+                <div class="header">
+                    <div class="col-md-12 text-center">
+                        <h1 class="mt-0 mb-3 text-white" id="header">Application Administration</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" id="column1" ;>
+                <h2 style="color:white">On a Daily Basis</h2>
+                <section class="color-pattern-1">
+                    <div>
+                        <button onclick="location.href = 'http://www.google.com'" target="_blank"
+                            class="button button-1 button-1a">CITRIX for G-Programs</button>
+                        <button class="button button-1 button-1a">GSR</button>
+                        <button class="button button-1 button-1a">GSR fill</button>
+                        <button class="button button-1 button-1a">GPI</button>
+                        <button class="button button-1 button-1a">SAG</button>
+                        <button class="button button-1 button-1a">PASSWORD GENERATOR</button>
+                        <button class="button button-1 button-1a">Group Directory</button>
+                        <button class="button button-1 button-1a">GSDR12</button>
+                        <button class="button button-1 button-1a">GLE</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-4" id="column2">
+                <h2 style="color:white" ;>Common Ground</h2>
+                <section class="color-pattern-2">
+                    <div>
+                        <button class="button button-1 button-1a">MoveInSync</button>
+                        <button class="button button-1 button-1a">Google</button>
+                        <button class="button button-1 button-1a">Payroll</button>
+                        <button class="button button-1 button-1a">E-learning</button>
+                        <button class="button button-1 button-1a" title="HR Direct">HR</button>
+                        <button class="button button-1 button-1a">&nbsp;Recognize A colleague</button>
+                        <button class="button button-1 button-1a">JOB Oppurtunities</button>
+                        <button class="button button-1 button-1a">Raise a Ticket</button>
+                    </div>
+                </section>
+            </div>
+            <div class="col-sm-3" id="column3">
+                <h3 style="color:white">Need I Remind You...</h3>
+                <section class="color-pattern-3">
+                    <button class="button button-1 button-1a" id="clarity" "divHider()">Submit Clarity</button>
+                    <button class="button button-1 button-1a">mark your leave <b>(GMIS)</b></button>
+                    <button class="button button-1 button-1a"> &nbsp;&nbsp;OT tracker</button>
+                    <button class="button button-1 button-1a"> &nbsp;&nbsp;WFH Tracker</button>
+                </section>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="column4" ;>
+                <p>Select process/queue!</p>
+                <section class="color-pattern-4">
+                    <h5></h5>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">INM1</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">INM2</button>
+                    <button class="button button-1 button-1a"
+                        onclick="processBtnClick(this)">HNAH_USA_INT_APP_SECURITY_TEAM_1</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">HBEU UK Cards
+                        Offshore</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">HBEU Channel
+                        Islands</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">GR</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">HBME UAE GWIS</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">HBFR</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">Australia</button>
+                    <button class="button button-1 button-1a"
+                        onclick="processBtnClick(this)">HBEU_UK_Security_OS</button>
+                    <button class="button button-1 button-1a" onclick="processBtnClick(this)">SSA Admin</button>
+                </section>
+            </div>
+            <div class="col-md-6" id="column4">
+                <section class="color-pattern-4" id="app">
+
+                </section>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="fontawesome-free-5.5.0-web/js/fontawesome.min.js"></script>
+    <script>
+        function divHider() {
+            let d = new Date();
+            let day = d.getDay();
+            if (day !== 4) {
+                document.getElementById("clarity").style.display = "none";
+            }
+        }
+        window.onload = divHider;
+
+        function processBtnClick(btn) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = bind(function () {
+                if (xhttp.readyState == 4 && xhttp.status == 200) {
+                    var responseObj = JSON.parse(xhttp.responseText);
+                    setApplicationLinks(responseObj, this);
+                }
+            }, btn);
+            xhttp.open("GET", "data.json", true);
+            xhttp.send();
+        }
+
+        function setApplicationLinks(res, btn) {
+            var sdf = "";
+            for (i = 0; i < res.PROCESS.length; i++) {
+                if (res.PROCESS[i].QueueName == btn.innerText) {
+                    for (j = 0; j < res.PROCESS[i].Applications.length; j++) {
+                        sdf =
+                            sdf +
+                            "<button class='button button-1 button-1a' onclick='window.location.href='' target='_blank'" +
+                            res.PROCESS[i].Applications[j].url +
+                            "''>" +
+                            res.PROCESS[i].Applications[j].name +
+                            "</button>";
+                    }
+                    break;
+                }
+            }
+            document.getElementById("app").innerHTML = sdf;
+        }
+
+        var bind = function (fn, context) {
+            return function () {
+                fn.apply(context, arguments);
+            };
+        };
+    </script>
+</body>
+
+</html>
